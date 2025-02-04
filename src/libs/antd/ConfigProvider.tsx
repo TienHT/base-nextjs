@@ -36,7 +36,7 @@ const AntdConfigProvider = ({
   }, [locale]);
 
   return (
-    <ThemeStackContext.Provider value={{ theme: theme }}>
+    <ThemeStackContext.Provider value={{ theme }}>
       <ConfigProvider
         theme={mode !== ThemeMode.light ? LightTheme : DarkTheme}
         locale={_locale}
